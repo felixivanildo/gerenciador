@@ -1,0 +1,218 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+ul li{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.main h1{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+  .gsan-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    list-style-type: none; 
+  }
+  
+  .gsan-menu.open {
+    opacity: 1;
+    visibility: visible;
+    list-style-type: none; 
+  }
+  
+  .gsan-toggle{
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../img/GSAN.png') ;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+    
+  }
+  
+  .gsan-toggle.open{
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../img/GSAN.png') ;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+  
+  }
+  
+  .gsan{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  /* -------------------------- */
+  
+  .pth-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    list-style-type: none; 
+  }
+  
+  .pth-menu.open {
+    opacity: 1;
+    visibility: visible;
+    list-style-type: none; 
+  }
+  
+  .pth-toggle{
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../img/pth.png') ;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+    
+  }
+  
+  .pth-toggle.open{
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../img/pth.png') ;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+  
+  }
+  
+  .pth{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  
+  /* -------------------------- */
+  
+  .redmine-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    list-style-type: none; 
+  }
+  
+  .redmine-menu.open {
+    opacity: 1;
+    visibility: visible;
+    list-style-type: none; 
+  }
+  
+  .redmine-toggle{
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../img/redmine.png') ;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+    
+  }
+  
+  .redmine-toggle.open{
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../img/redmine.png') ;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+  
+  }
+  
+  .redmine{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+
+  /* -------------------------- */
+  
+  .piramide-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    list-style-type: none; 
+  }
+  
+  .piramide-menu.open {
+    opacity: 1;
+    visibility: visible;
+    list-style-type: none; 
+  }
+  
+  .piramide-toggle{
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../img/piramide.png') ;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+    
+  }
+  
+  .piramide-toggle.open{
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../img/piramide.png') ;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+  
+  }
+  
+  .piramide{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  

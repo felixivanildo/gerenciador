@@ -2,6 +2,7 @@ import React from "react";
 import Selectscreen from "./components/select/Select";
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Getin from "./components/getin/Getin";
+import Forms from "./components/commun/Fomsscreen";
 
 
 function App() {
@@ -15,6 +16,10 @@ function App() {
     {
       path: "/GETIN",
       element: <Getin/>
+    },
+    {
+      path: "/testes",
+      element: <Forms/>
     }
 
     

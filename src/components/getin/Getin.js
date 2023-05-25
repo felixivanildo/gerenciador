@@ -1,24 +1,29 @@
-import React from "react";
-
-
+import React, {useEffect} from "react";
+import Supmer from "./supmer/Supmer";
+import Supmast from "./supmast/Supmast";
+import MainLayout from "../commun/Layout";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 function Getin() {
+   
+   useEffect(()=>{
+      const cleaner = async ()=> {
+      await AsyncStorage.removeItem('@formulario')
+      }
 
 
-    return (
-        <div className="dropdown">
-           <div className="computador"/>
-           <div className="conteudocomputador">
-            <p>Computador não funciona</p>
-            <p>Instalação de software</p>
-            <p>Erro de programa</p>
-            <p>Problema com mouse/teclado</p>
+      cleaner()
+   }, [])
 
-
-           </div>
-
-        </div>
-    );
+  return (
+ 
+     <div>
+        <MainLayout></MainLayout>
+        <Supmer></Supmer>
+        <Supmast></Supmast>
+     </div>
+  
+  );
 }
 
 export default Getin;
