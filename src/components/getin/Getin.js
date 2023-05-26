@@ -3,6 +3,7 @@ import Supmer from "./supmer/Supmer";
 import Supmast from "./supmast/Supmast";
 import MainLayout from "../commun/Layout";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import Rodape from "../commun/Rodape";
 
 function Getin() {
    
@@ -21,6 +22,8 @@ function Getin() {
         <MainLayout></MainLayout>
         <Supmer></Supmer>
         <Supmast></Supmast>
+        <Rodape></Rodape>
+        
      </div>
   
   );

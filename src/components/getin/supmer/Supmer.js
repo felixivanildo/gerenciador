@@ -84,12 +84,12 @@ function Supmer() {
           <h1>SUPMER</h1>
           <Divisionbar></Divisionbar>
           <div className="buttons">
-            <div className="computador" onMouseEnter={handleMouseEntercpu} onMouseLeave={handleMouseLeavecpu}>
+            <div className="menu" onMouseEnter={handleMouseEntercpu} onMouseLeave={handleMouseLeavecpu}>
                 <button className={`computador-toggle ${cpu ? 'open' : ''}`} ></button>
-                <ul className={`computador-menu ${cpu ? 'open' : ''}`}>
+                <ul className={`main-menu ${cpu ? 'open' : ''}`}>
                     <li><button onClick={formselector}>Computador não funciona</button></li>
                     <li><button onClick={formselector}>Instalação de software</button></li>
-                    <li><button onClick={formselector}>Erro de programa</button></li>
+                    <li><button onClick={formselector}>Erro de software</button></li>
                     <li><button onClick={formselector}>Problema com mouse/teclado</button></li>
                 </ul>
 
@@ -97,10 +97,10 @@ function Supmer() {
             </div>
 
 
-            <div className="contracheque" onMouseEnter={handleMouseEnterctq} onMouseLeave={handleMouseLeavectq}>
+            <div className="menu" onMouseEnter={handleMouseEnterctq} onMouseLeave={handleMouseLeavectq}>
                 <button className={`contracheque-toggle ${ctq ? 'open' : ''}`} ></button>
-                <ul className={`contracheque-menu ${ctq ? 'open' : ''}`}>
-                    <li><button onClick={formselector}>Criar senha</button></li>
+                <ul className={`main-menu ${ctq ? 'open' : ''}`}>
+                    <li><button onClick={()=>{window.location.href = 'https://contracheque.casal.al.gov.br/login/'}}>Criar senha</button></li>
                     <li><button onClick={formselector}>Resetar senha</button></li>
                     
                 </ul>
@@ -110,9 +110,9 @@ function Supmer() {
 
 
 
-            <div className="internet" onMouseEnter={handleMouseEnterinte} onMouseLeave={handleMouseLeaveinte}>
+            <div className="menu" onMouseEnter={handleMouseEnterinte} onMouseLeave={handleMouseLeaveinte}>
                 <button className={`internet-toggle ${inte ? 'open' : ''}`} ></button>
-                <ul className={`internet-menu ${inte ? 'open' : ''}`}>
+                <ul className={`main-menu ${inte ? 'open' : ''}`}>
                     <li><button onClick={formselector}>Abrir chamado</button></li>
                    
                 </ul>
@@ -124,9 +124,9 @@ function Supmer() {
             </div>
 
           <div className="buttons">
-          <div className="email" onMouseEnter={handleMouseEnteremail} onMouseLeave={handleMouseLeaveemail}>
+          <div className="menu" onMouseEnter={handleMouseEnteremail} onMouseLeave={handleMouseLeaveemail}>
                 <button className={`email-toggle ${email ? 'open' : ''}`} ></button>
-                <ul className={`email-menu ${email ? 'open' : ''}`}>
+                <ul className={`main-menu ${email ? 'open' : ''}`}>
                     <li><button onClick={formselector}>Solicitar e-mail funcional</button></li>
                     <li><button onClick={formselector}>Solicitar e-mail setorial</button></li>
                     <li><button onClick={formselector}>Recuperar senha</button></li>
@@ -137,18 +137,21 @@ function Supmer() {
 
 
 
-            <div className="imp" onMouseEnter={handleMouseEnterimp} onMouseLeave={handleMouseLeaveimp}>
+            <div className="menu" onMouseEnter={handleMouseEnterimp} onMouseLeave={handleMouseLeaveimp}>
                 <button className={`imp-toggle ${imp ? 'open' : ''}`} ></button>
-                <ul className={`imp-menu ${imp ? 'open' : ''}`}>
+                <ul className={`main-menu ${imp ? 'open' : ''}`}>
                     <li><button onClick={formselector}>Impressora/Scanner não imprime</button></li>
                     <li><button onClick={formselector}>Instalar em outro computador</button></li>
-                    <li><button onClick={formselector}>Impressora Kyocera (Meyer - Whatsapp)</button></li>
+                    <li><button onClick={()=>{window.location.href = 'https://api.whatsapp.com/send?phone=558221239500&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es.'}}>Impressora Kyocera (Meyer - Whatsapp)</button></li>
                 
                 </ul>
                 
             </div>
+            
           </div>
+          
         </div>
+        
 
     );
 }

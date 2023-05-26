@@ -3,6 +3,8 @@ import Selectscreen from "./components/select/Select";
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Getin from "./components/getin/Getin";
 import Forms from "./components/commun/Fomsscreen";
+import Denuncia from "./components/estaticas/Denuncia";
+import Sudeo from "./components/sudeo/Sudeo";
 
 
 function App() {
@@ -18,9 +20,17 @@ function App() {
       element: <Getin/>
     },
     {
-      path: "/testes",
+      path: "/FORMS",
       element: <Forms/>
+    },
+    {path: "/DENÚNCIA",
+     element: <Denuncia/>
+    },
+    {
+      path: "/SUDEO",
+      element: <Sudeo/>
     }
+
 
     
    ])

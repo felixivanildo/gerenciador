@@ -52,6 +52,9 @@
   
 }
 
+
+
+
 .main{
     display: flex;
     flex-direction: column;
@@ -83,18 +86,7 @@ ul li{
     justify-content: space-around;
 }
   
-  .computador-menu {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-    list-style-type: none; 
-  }
-  
-  .computador-menu.open {
-    opacity: 1;
-    visibility: visible;
-    list-style-type: none; 
-  }
+ 
   
   .computador-toggle{
     width: 100px;
@@ -128,27 +120,11 @@ ul li{
   
   }
   
-  .computador{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
+
   
   /* -------------------------- */
   
-  .contracheque-menu {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-    list-style-type: none; 
-  }
-  
-  .contracheque-menu.open {
-    opacity: 1;
-    visibility: visible;
-    list-style-type: none; 
-  }
+
   
   .contracheque-toggle{
     width: 100px;
@@ -175,28 +151,12 @@ ul li{
   
   }
   
-  .contracheque{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
   
   
   
   /* -------------------------- */
   
-  .internet-menu {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-    list-style-type: none; 
-  }
-  
-  .internet-menu.open {
-    opacity: 1;
-    visibility: visible;
-    list-style-type: none; 
-  }
+ 
   
   .internet-toggle{
     width: 100px;
@@ -223,28 +183,11 @@ ul li{
   
   }
   
-  .internet{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
   
   
   
   /* -------------------------- */
   
-  .email-menu {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-    list-style-type: none; 
-  }
-  
-  .email-menu.open {
-    opacity: 1;
-    visibility: visible;
-    list-style-type: none; 
-  }
   
   .email-toggle{
     width: 100px;
@@ -271,27 +214,10 @@ ul li{
   
   }
   
-  .email{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
   
   
     /* -------------------------- */
-  
-    .imp-menu {
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s, visibility 0.3s;
-        list-style-type: none; 
-      }
-      
-      .imp-menu.open {
-        opacity: 1;
-        visibility: visible;
-        list-style-type: none; 
-      }
+ 
       
       .imp-toggle{
         width: 100px;
@@ -318,8 +244,22 @@ ul li{
       
       }
       
-      .imp{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+     
+
+      button{
+        background-color: rgba(255, 255, 255, 0);
+        color: black;
+        border: none;
+        transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.2s;
+      
+        
+      
+      }
+      
+      
+      button:hover{
+        background-color: rgba(255, 255, 255, 0);
+        color: blue;
+        transform: scale(1.5);
+      
       }

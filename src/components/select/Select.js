@@ -14,7 +14,7 @@ function Selectscreen() {
   
 
     return (
-        <div className="wholescreen">
+        <div className="wholescreen" >
             
             <div className="mainsquare">
             <div className="img"></div>

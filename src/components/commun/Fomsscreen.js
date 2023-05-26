@@ -46,6 +46,7 @@ function Forms() {
                                     )}
                                     {formtype[index].tipo === "select" && (
                                         <select className="inserir" {...register(`formtype[${index}].tipo`, { required: false })} >
+                                            <option> ------- </option>
                                             <option value="CALLCENTER">CALLCENTER</option>
                                             <option value="SEDE">SEDE</option>                                     
                                             <option value="Complexo Benedito Bentes">Complexo Benedito Bentes</option>
