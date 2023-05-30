@@ -1,26 +1,12 @@
-import React, {useState} from "react";
+import React from "react";
 import Logo from "../../img/logocasal60.png"
-import { useNavigate } from "react-router-dom";
 import search from "../../img/search.png"
+import NavButton from "./Navbarbutton";
 
 
 function MainLayout (){
 
-    const Navigate = useNavigate ()
-
-
-    const [color, setColor] = useState ([{background: 'rgb(0, 147, 221)'}, {texto: "white"}])
-
-    const enterhandler = (data)=>{
-       setColor([{background: 'white'}, {texto: "black"}])
-       
-   }
-
-
-   const leavehandler = () =>{
-    setColor([{background: 'rgb(0, 147, 221)'}, {texto: "white"}])
-   }
-
+   
     const navbarStyle = {
         backgroundColor: '#0093DD',
         paddingTop: '0px',
@@ -52,14 +38,11 @@ function MainLayout (){
         <div>
             <div className="navbar" style={navbarStyle}>
                 <div style={imgstyle}/>
-                <div onMouseEnter={enterhandler} onMouseLeave={leavehandler} style={{background: `${color[0].background}`,
-                     display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px'}} onClick={()=>{Navigate('/')}}>
-
-                    <a href="/" style={{marginLeft: '20px', color: `${color[1].texto}`, textDecoration: 'none', fontSize: "large", fontWeight: 'bold', 
-                     display: 'flex', justifyContent: 'center', alignItems: 'center', margin:'0px'}}>PÁGINA INICIAL</a>
-
-
-                </div>
+                
+                <NavButton link="" nome="PAGINA INICIAL" ></NavButton>
+                <NavButton link="DENÚNCIA" nome="CHAMADOS"></NavButton>
+                <NavButton link="" nome="SAIR"></NavButton>
+                             
                 
                
                     <input  className="searchinput" style={{marginLeft: "50%", width: "280px", height: "4px", borderRadius: "10px", border: "10px", backgroundColor:'#005CA1', borderColor: 'white',

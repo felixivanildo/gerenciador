@@ -1,434 +1,3164 @@
-921988
-921989
-921990
-921991
-921992
-921993
-921994
-921995
-921996
-921997
-921998
-921999
-922000
-922001
-922002
-922003
-922004
-922005
-922006
-922007
-922008
-922009
-922010
-922011
-922012
-922013
-922014
-922015
-922016
-922017
-922018
-922019
-922020
-922021
-922022
-922023
-922024
-922025
-922026
-922027
-922028
-922029
-922030
-922031
-922032
-922033
-922034
-922035
-922036
-922037
-922038
-922039
-922040
-922041
-922042
-922043
-922044
-922045
-922046
-922047
-922048
-922049
-922050
-922051
-922052
-922053
-922054
-922055
-922056
-922057
-922058
-922059
-922060
-922061
-922062
-922063
-922064
-922065
-922066
-922067
-922068
-922069
-922070
-922071
-922072
-922073
-922074
-922075
-922076
-922077
-922078
-922079
-922080
-922081
-922082
-922083
-922084
-922085
-922086
-922087
-922088
-922089
-922090
-922091
-922092
-922093
-922094
-922095
-922096
-922097
-922098
-922099
-922100
-922101
-922102
-922103
-922104
-922105
-922106
-922107
-922108
-922109
-922110
-922111
-922112
-922113
-922114
-922115
-922116
-922117
-922118
-922119
-922120
-922121
-922122
-922123
-922124
-922125
-922126
-922127
-922128
-922129
-922130
-922131
-922132
-922133
-922134
-922135
-922136
-922137
-922138
-922139
-922140
-922141
-922142
-922143
-922144
-922145
-922146
-922147
-922148
-922149
-922150
-922151
-922152
-922153
-922154
-922155
-922156
-922157
-922158
-922159
-922160
-922161
-922162
-922163
-922164
-922165
-922166
-922167
-922168
-922169
-922170
-922171
-922172
-922173
-922174
-922175
-922176
-922177
-922178
-922179
-922180
-922181
-922182
-922183
-922184
-922185
-922186
-922187
-922188
-922189
-922190
-922191
-922192
-922193
-922194
-922195
-922196
-922197
-922198
-922199
-922200
-922201
-922202
-922203
-922204
-922205
-922206
-922207
-922208
-922209
-922210
-922211
-922212
-922213
-922214
-922215
-922216
-922217
-922218
-922219
-922220
-922221
-922222
-922223
-922224
-922225
-922226
-922227
-922228
-922229
-922230
-922231
-922232
-922233
-922234
-922235
-922236
-922237
-922238
-922239
-922240
-922241
-922242
-922243
-922244
-922245
-922246
-922247
-922248
-922249
-922250
-922251
-922252
-922253
-922254
-922255
-922256
-922257
-922258
-922259
-922260
-922261
-922262
-922263
-922264
-922265
-922266
-922267
-922268
-922269
-922270
-922271
-922272
-922273
-922274
-922275
-922276
-922277
-922278
-922279
-922280
-922281
-922282
-922283
-922284
-922285
-922286
-922287
-922288
-922289
-922290
-922291
-922292
-922293
-922294
-922295
-922296
-922297
-922298
-922299
-922300
-922301
-922302
-922303
-922304
-922305
-922306
-922307
-922308
-922309
-922310
-922311
-922312
-922313
-922314
-922315
-922316
-922317
-922318
-922319
-922320
-922321
-922322
-922323
-922324
-922325
-922326
-922327
-922328
-922329
-922330
-922331
-922332
-922333
-922334
-922335
-922336
-922337
-922338
-922339
-922340
-922341
-922342
-922343
-922344
-922345
-922346
-922347
-922348
-922349
-922350
-922351
-922352
-922353
-922354
-922355
-922356
-922357
-922358
-922359
-922360
-922361
-922362
-922363
-922364
-922365
-922366
-922367
-922368
-922369
-922370
-922371
-922372
-922373
-922374
-922375
-922376
-922377
-922378
-922379
-922380
-922381
-922382
-922383
-922384
-922385
-922386
-922387
-922388
-922389
-922390
-922391
-922392
-922393
-922394
-922395
-922396
-922397
-922398
-922399
-922400
-922401
-922402
-922403
-922404
-922405
-922406
-922407
-922408
-922409
-922410
-922411
-922412
-922413
-922414
-922415
-922416
-922417
-922418
-922419
-922420
-922421
+{
+	"trackers": [
+		{
+			"id": 164,
+			"name": "Ambiental",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 165,
+			"name": "Comercial",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 175,
+			"name": "Novos Negócios",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 167,
+			"name": "Organizacional",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 166,
+			"name": "Suprimentos",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 163,
+			"name": "Tecnologia",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 172,
+			"name": "Demanda Interna",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 162,
+			"name": "BRK",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 3,
+			"name": "Suporte",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 7,
+			"name": "Manter Usuario",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 152,
+			"name": "Treinamento",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 174,
+			"name": "Alteração",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 173,
+			"name": "Desenvolvimento",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 44,
+			"name": "Requisição",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 131,
+			"name": "Ação AMC",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 12,
+			"name": "Redes",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 35,
+			"name": "Query",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 36,
+			"name": "Análise de Requisição",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 30,
+			"name": "Impressora",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 130,
+			"name": "Meyer - Chamados",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 171,
+			"name": "Fluxogramas GSAN",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 160,
+			"name": "Login - Chamados",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"estimated_hours",
+				"description"
+			]
+		},
+		{
+			"id": 43,
+			"name": "E-mail",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 151,
+			"name": "CADian",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"description"
+			]
+		},
+		{
+			"id": 42,
+			"name": "Contra Cheque",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 159,
+			"name": "Aguardando atendimento",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 28,
+			"name": "Recolher Equipamento",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 11,
+			"name": "Entregar Equipamento",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 53,
+			"name": "Manutenção no Laboratório",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": "",
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 192,
+			"name": "Manutenção Externa",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": "",
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 52,
+			"name": "Aguardando Assistência",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 58,
+			"name": "Substituição",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 1,
+			"name": "Descarte",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 59,
+			"name": "Emprestar Equipamento",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 62,
+			"name": "Equipamentos Reservados",
+			"default_status": {
+				"id": 41,
+				"name": "Reservado"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 22,
+			"name": "Garantia",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 64,
+			"name": "Ordem de Serviço",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 2,
+			"name": "Funcionalidade",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 5,
+			"name": "Performance",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 17,
+			"name": "Projeto",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 60,
+			"name": "Apresentação",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 25,
+			"name": "Prova",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 18,
+			"name": "Falta no expediente",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"due_date",
+				"description"
+			]
+		},
+		{
+			"id": 66,
+			"name": "Ferias",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 19,
+			"name": "Alternar horário de trabalho",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"parent_issue_id",
+				"due_date",
+				"description"
+			]
+		},
+		{
+			"id": 34,
+			"name": "Entrada de Material",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"description"
+			]
+		},
+		{
+			"id": 41,
+			"name": "Saida de Material",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"parent_issue_id",
+				"description"
+			]
+		},
+		{
+			"id": 4,
+			"name": "Software",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 37,
+			"name": "Documentação",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"parent_issue_id",
+				"start_date",
+				"description"
+			]
+		},
+		{
+			"id": 8,
+			"name": "Melhoria de funcionalidade",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 9,
+			"name": "Correção de funcionalidade",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 38,
+			"name": "Funcionalidade Evolutiva",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 39,
+			"name": "Bug",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 40,
+			"name": "Configurar Serviço TI",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 45,
+			"name": "Análise de Projeto",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 46,
+			"name": "Elaboração de Projeto",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 77,
+			"name": "Elaboração de Projeto SUPAEP",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 78,
+			"name": "Elaboração de Projeto SUPOCE",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 47,
+			"name": "Viabilidade Técnica",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 48,
+			"name": "Processos Administrativos",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 50,
+			"name": "Atividade Comercial",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 51,
+			"name": "Atividade Operacional",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 49,
+			"name": "Fiscalização",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"description"
+			]
+		},
+		{
+			"id": 65,
+			"name": "Contrato",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"done_ratio"
+			]
+		},
+		{
+			"id": 79,
+			"name": "Obras de Terceiros",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"done_ratio"
+			]
+		},
+		{
+			"id": 128,
+			"name": "Contrato (Recebimento)",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date"
+			]
+		},
+		{
+			"id": 129,
+			"name": "Obras de Terceiros (Receb.)",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date"
+			]
+		},
+		{
+			"id": 112,
+			"name": "Fiscalização de Obras",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"parent_issue_id",
+				"start_date"
+			]
+		},
+		{
+			"id": 67,
+			"name": "Medição",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"parent_issue_id",
+				"start_date"
+			]
+		},
+		{
+			"id": 69,
+			"name": "Aditivo de Valor",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"description"
+			]
+		},
+		{
+			"id": 70,
+			"name": "Aditivo de Prazo",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"description"
+			]
+		},
+		{
+			"id": 132,
+			"name": "Aditivo de Prazo e Valor",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"description"
+			]
+		},
+		{
+			"id": 72,
+			"name": "Aditivo de Objeto",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"description"
+			]
+		},
+		{
+			"id": 134,
+			"name": "COC - Operação Compartilhada",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"description"
+			]
+		},
+		{
+			"id": 135,
+			"name": "Projeto / ART",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 136,
+			"name": "As-built / ART",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 137,
+			"name": "Licenças Ambientais",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 138,
+			"name": "Relatórios Ambientais",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 139,
+			"name": "Outorgas (SUPPAC)",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 140,
+			"name": "Poços Tubulares",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 141,
+			"name": "Hidrômetro / Macromedidor",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 142,
+			"name": "Planilhas de Custos / NFs",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 143,
+			"name": "Relatório Fotográfico Empresa",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 144,
+			"name": "Relat. Fotográfico Cross/Cress",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 145,
+			"name": "Relatório Vistoria Técnica",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 146,
+			"name": "Termo Provisório Cross/Cress",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 147,
+			"name": "Relatório Definitivo",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 148,
+			"name": "Termo de Recebimento VGO/VGE",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 149,
+			"name": "Outros",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"estimated_hours"
+			]
+		},
+		{
+			"id": 86,
+			"name": "Licitação",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 87,
+			"name": "Contrato de Licitação",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 88,
+			"name": "Contratação Direta",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 89,
+			"name": "Convênios",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 91,
+			"name": "Apostila",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 68,
+			"name": "Processos CAE",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 73,
+			"name": "Contrato de Parceria c/ o G.E.",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id"
+			]
+		},
+		{
+			"id": 125,
+			"name": "Acompanhamento de Execução",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"category_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 76,
+			"name": "Nota Fiscal do Convênio",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"parent_issue_id"
+			]
+		},
+		{
+			"id": 153,
+			"name": "Solicitações de materiais",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 74,
+			"name": "Solicitação CASAL - SCA",
+			"default_status": {
+				"id": 63,
+				"name": "Q Antes - A Preencher"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 75,
+			"name": "Solicitação CASAL - SAA",
+			"default_status": {
+				"id": 63,
+				"name": "Q Antes - A Preencher"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 80,
+			"name": "Solicitação SPE - SCA",
+			"default_status": {
+				"id": 71,
+				"name": "Solicitação Parada de Estação"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 81,
+			"name": "Solicitação SPE - SAA",
+			"default_status": {
+				"id": 71,
+				"name": "Solicitação Parada de Estação"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 170,
+			"name": "Fluxogramas PIRAMIDE",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 85,
+			"name": "Chamado Interno",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 84,
+			"name": "Processo de Cobrança Judicial",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"description"
+			]
+		},
+		{
+			"id": 90,
+			"name": "Ação PRCP",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"start_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 96,
+			"name": "Solicitação de mão de obra",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 92,
+			"name": "Telefonia",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": "",
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 93,
+			"name": "Vigilância",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": "",
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 94,
+			"name": "Ar condicionado",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 97,
+			"name": "Combustíveis",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 98,
+			"name": "Veículos",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 99,
+			"name": "Solicitação de Documentos",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 95,
+			"name": "Solicitação de Arquivamento",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 100,
+			"name": "Realizar Outorga do Sistema",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 101,
+			"name": "Realizar Licença do Sistema",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 102,
+			"name": "Projetos Macro",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 103,
+			"name": "Projetos Multiplicadores",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 104,
+			"name": "Visitas e Palesttras",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 105,
+			"name": "Recebimento de Obras",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 106,
+			"name": "Captação",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 108,
+			"name": "Rede de Distribuição",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 109,
+			"name": "E.T.E.",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 110,
+			"name": "Corpo Receptor",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 107,
+			"name": "Autos de Infração",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 111,
+			"name": "Acompanhamento Outorga",
+			"default_status": {
+				"id": 115,
+				"name": "Em Acompanhamento"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 113,
+			"name": "Acompanhamento Licença",
+			"default_status": {
+				"id": 115,
+				"name": "Em Acompanhamento"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 114,
+			"name": "Acompanhamento Judicial",
+			"default_status": {
+				"id": 115,
+				"name": "Em Acompanhamento"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 115,
+			"name": "Controle de Processos",
+			"default_status": {
+				"id": 20,
+				"name": "Triagem"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 116,
+			"name": "Disp Abast Efeito de Outorga",
+			"default_status": {
+				"id": 20,
+				"name": "Triagem"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 117,
+			"name": "Plano de Ação Supermetas",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 118,
+			"name": "Estágio - Renovação",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 119,
+			"name": "Estágio - Substituição",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 120,
+			"name": "Estágio - Vaga Nova",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 121,
+			"name": "Estágio - Empregado Estagiário",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 122,
+			"name": "Relatório Estágios Solicitados",
+			"default_status": {
+				"id": 8,
+				"name": "Executando"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 123,
+			"name": "CTTE",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 126,
+			"name": "O.S Função Gratificada",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 124,
+			"name": "Controle de documentos",
+			"default_status": {
+				"id": 37,
+				"name": "Entrada"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 150,
+			"name": "Solicitação - Viagem a Serviço",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 127,
+			"name": "Solicitação de Incremento",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 154,
+			"name": "Orçamentos",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 155,
+			"name": "Aditivos",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 156,
+			"name": "Reajustes",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 157,
+			"name": "Aditivos com Reajuste",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 158,
+			"name": "Pesquisa de Mercado",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 6,
+			"name": "Relatorio",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 16,
+			"name": "Reunião",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"estimated_hours",
+				"description"
+			]
+		},
+		{
+			"id": 82,
+			"name": "Backup",
+			"default_status": {
+				"id": 18,
+				"name": "Campo"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 83,
+			"name": "Lixeira",
+			"default_status": {
+				"id": 151,
+				"name": "Excluída"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"start_date",
+				"description"
+			]
+		},
+		{
+			"id": 10,
+			"name": "Testes",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 176,
+			"name": "Submissão ",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": "",
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 177,
+			"name": "Registro de ativ. Home Office",
+			"default_status": {
+				"id": 146,
+				"name": "Registrado"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"start_date",
+				"description"
+			]
+		},
+		{
+			"id": 178,
+			"name": "P.S. - Reembolso Mensal",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 179,
+			"name": "P.O. - Reembolso Mensal",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 180,
+			"name": "Auxílio Creche",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 181,
+			"name": "A.E. Filho(a) - Inscrição",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 182,
+			"name": "A.E. Filho(a) - Recadst. Anual",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 191,
+			"name": "A.E. - Inscrição",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": "",
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 183,
+			"name": "A.E. - Reembolso Mensal",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 184,
+			"name": "A.E. - Reembolso Livros e M.E.",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 185,
+			"name": "2ª via Cartão Alimentação",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 186,
+			"name": "A.F. - Reemb. Óbito Dependente",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 190,
+			"name": "Auxílio Trab. e Dep. c/ N. E.",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": "",
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 187,
+			"name": "Dúvida",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 188,
+			"name": "Incidente",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 189,
+			"name": "Requisição de Serviço",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": null,
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 193,
+			"name": "ARSAL",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": "Tarefas criadas para acompanhamento dos processos ARSAL ",
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 194,
+			"name": "JURÍDICO",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": "Tarefa criada para acompanhamento dos processos JURÍDICO",
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"fixed_version_id",
+				"parent_issue_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 195,
+			"name": "Atestado",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": "",
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		},
+		{
+			"id": 196,
+			"name": "Alteração de Cargo",
+			"default_status": {
+				"id": 1,
+				"name": "Nova"
+			},
+			"description": "",
+			"enabled_standard_fields": [
+				"assigned_to_id",
+				"category_id",
+				"start_date",
+				"due_date",
+				"estimated_hours",
+				"done_ratio",
+				"description"
+			]
+		}
+	]
+}

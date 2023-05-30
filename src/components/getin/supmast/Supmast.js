@@ -95,7 +95,7 @@ function Supmast() {
         let a = Selector(data.target.innerText)
 
         await AsyncStorage.setItem("@formulario", JSON.stringify(a)).then(() => {
-            Navegacione("/testes");
+            Navegacione("/FORMS");
         })
             .catch((err) => console.log(err))
 

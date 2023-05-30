@@ -2,7 +2,7 @@ export function Selector(data) {
 
     // Computador 
     if (data === "Computador não funciona") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Computador não funciona" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 12, tracker: 3, project_name: "Computador não funciona" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -15,7 +15,7 @@ export function Selector(data) {
 
 
     if (data === "Instalação de software") {
-        return [{ nome: "Nome completo", tipo: "input" },
+        return [{ project: 12, tracker: 3, custum_id2: 37, project_name: "Instalação de software" },{ nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -29,7 +29,7 @@ export function Selector(data) {
 
 
     if (data === "Erro de software") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Erro de software" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 12, tracker: 3,  project_name: "Erro de software" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -43,8 +43,8 @@ export function Selector(data) {
 
 
 
-    if (data === "Problema com teclado/mouse") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+    if (data === "Problema com mouse/teclado") {
+        return [{ project: 12, tracker: 3,  project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -57,7 +57,7 @@ export function Selector(data) {
 
     // Contracheque 
     if (data === "Resetar senha") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 12, tracker: 42, project_name: "Resetar senha" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Cpf", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
@@ -67,7 +67,7 @@ export function Selector(data) {
 
     //  Internet
     if (data === "Abrir chamado") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 12, tracker: 12,  project_name: "Internet" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -79,7 +79,7 @@ export function Selector(data) {
 
     // Email 
     if (data === "Solicitar e-mail funcional") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 12, tracker: 43,  project_name: "Solicitar e-mail funcional" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Cpf", tipo: "input" },
@@ -93,7 +93,7 @@ export function Selector(data) {
     }
 
     if (data === "Solicitar e-mail setorial") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome do responsavel", tipo: "input" },
+        return [{ project: 12, tracker: 43,  project_name: "Solicitar e-mail setorial" }, { nome: "Nome do responsavel", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Sigla", tipo: "input" },
@@ -106,7 +106,7 @@ export function Selector(data) {
     }
 
     if (data === "Recuperar senha") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 12, tracker: 43,  project_name: "Recuperar senha" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Cpf", tipo: "input" },
@@ -119,7 +119,7 @@ export function Selector(data) {
 
     // Impressora 
     if (data === "Impressora/Scanner não imprime") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 12, tracker: 30,  project_name: "Impressora/Scanner não imprime" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -132,7 +132,7 @@ export function Selector(data) {
     }
 
     if (data === "Instalar em outro computador") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 12, tracker: 30,  project_name: "Instalar em outro computador" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -146,7 +146,7 @@ export function Selector(data) {
 
     // Gsan 
     if (data === "Erros") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 10, tracker: 43,  project_name: "Erros Gsan" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -158,7 +158,7 @@ export function Selector(data) {
     }
 
     if (data === "Solicitação de dados/relatórios") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 10, tracker: 35,  project_name: "Solicitação de dados/relatórios" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -170,7 +170,7 @@ export function Selector(data) {
 
     // pentaho 
     if (data === "Solicitação de suporte") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 17, tracker: 7,  project_name: "Solicitação de suporte" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -184,7 +184,7 @@ export function Selector(data) {
 
 
     if (data === "Solicitação de acesso") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 17, tracker: 7,  project_name: "Solicitação de acesso" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -199,7 +199,7 @@ export function Selector(data) {
     // Redmnine 
 
     if (data === "Ativação/desativação de usuário(s)") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 161, tracker: 85,  project_name: "Ativação/desativação de usuário(s)" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -212,7 +212,7 @@ export function Selector(data) {
     }
 
     if (data === "Implantação do Redmine") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 161, tracker: 85,  project_name: "Implantação do Redmine" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -225,7 +225,7 @@ export function Selector(data) {
 
 
     if (data === "Informar erro/modificação") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 161, tracker: 85,  project_name: "Informar erro/modificação" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -238,7 +238,7 @@ export function Selector(data) {
 
 
     if (data === "Treinamento") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 161, tracker: 85,  project_name: "Treinamento" }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -255,7 +255,7 @@ export function Selector(data) {
     // Piramide 
 
     if (data === "Suporte Pirâmide") {
-        return [{ project: 12, tracker: 43, custum_id: 116, project_name: "Problema com teclado/mouse" }, { nome: "Nome completo", tipo: "input" },
+        return [{ project: 14, tracker: 85,  project_name: "Suporte Pirâmide", images: true }, { nome: "Nome completo", tipo: "input" },
         { nome: "Email coorporativo", tipo: "input" },
         { nome: "Número da matricula", tipo: "input" },
         { nome: "Telefone", tipo: "input" },
@@ -264,6 +264,7 @@ export function Selector(data) {
         { nome: "Local", tipo: "input" },
         { nome: "Data de previsão para o treinamento", tipo: "input" },
         { nome: "Horário previsto", tipo: "input" },
+        { nome: "Anexar imagens", tipo: "file"},
         { nome: "Descrição das necessidades", tipo: "textarea" },
         ]
     }
