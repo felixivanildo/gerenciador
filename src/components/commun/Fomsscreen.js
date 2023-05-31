@@ -24,16 +24,16 @@ function Forms() {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = async (data) => {
-        const formData = new FormData();
-        formData.append('image', selectedImage);
+        // const formData = new FormData();
+        // formData.append('image', selectedImage);
 
         console.log(data)
-        Throw(data, formtype[0], formData)
+        Throw(data, formtype[0], selectedImage)
     };
 
     const handleImageChange = (event) => {
         const file = event.target.files[0];
-        console.log(event.target.files)
+        console.log(event.target.files, "este")
         setSelectedImage(URL.createObjectURL(file));
     };
 
@@ -56,7 +56,7 @@ function Forms() {
                                         <input className="inserir" {...register(`formtype[${index}].tipo`, { required: false })} />
                                     )}
                                     {formtype[index].tipo === "file" && (
-                                        <input onChange={handleImageChange} className="inserir" type="file" />
+                                        <input onChange={handleImageChange} className="inserir" type="file" multiple />
 
                                     )}
 
