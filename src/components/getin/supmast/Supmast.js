@@ -165,10 +165,8 @@ function Supmast() {
                 <div className="menu" onMouseEnter={handleMouseEntersst} onMouseLeave={handleMouseLeavesst}>
                     <button className={`salasituacao-toggle ${sst ? 'open' : ''}`} ></button>
                     <ul className={`main-menu ${sst ? 'open' : ''}`}>
-                        <li><button onClick={formselector} >Suporte Pirâmide</button></li>
-                        <li><button onClick={formselector} >Criar/Alterar Perfil</button></li>
-                        <li><button onClick={formselector} >Treinamento</button></li>
-
+                        <li><button onClick={formselector} >Chamados Sala Situação</button></li>
+                    
                     </ul>
 
 
@@ -194,9 +192,8 @@ function Supmast() {
                 <div className="menu" onMouseEnter={handleMouseEntersc} onMouseLeave={handleMouseLeavesc}>
                     <button className={`sc-toggle ${sc ? 'open' : ''}`} ></button>
                     <ul className={`main-menu ${sc ? 'open' : ''}`}>
-                        <li><button onClick={formselector} >Suporte Pirâmide</button></li>
-                        <li><button onClick={formselector} >Criar/Alterar Perfil</button></li>
-                        <li><button onClick={formselector} >Treinamento</button></li>
+                        <li><button onClick={formselector} >Reportar falha/erro no site</button></li>
+                       
 
                     </ul>
 
@@ -206,9 +203,8 @@ function Supmast() {
                 <div className="menu" onMouseEnter={handleMouseEnteroutro} onMouseLeave={handleMouseLeaveoutro}>
                     <button className={`outro-toggle ${outro ? 'open' : ''}`} ></button>
                     <ul className={`main-menu ${outro ? 'open' : ''}`}>
-                        <li><button onClick={formselector} >Suporte Pirâmide</button></li>
-                        <li><button onClick={formselector} >Criar/Alterar Perfil</button></li>
-                        <li><button onClick={formselector} >Treinamento</button></li>
+                        <li><button onClick={formselector} >Abir outro tipo</button></li>
+                       
 
                     </ul>
 

@@ -40,12 +40,12 @@ function MainLayout (){
                 <div style={imgstyle}/>
                 
                 <NavButton link="" nome="PAGINA INICIAL" ></NavButton>
-                <NavButton link="DENÚNCIA" nome="CHAMADOS"></NavButton>
+                <NavButton link="" nome="MEUS CHAMADOS"></NavButton>
                 <NavButton link="" nome="SAIR"></NavButton>
                              
                 
                
-                    <input  className="searchinput" style={{marginLeft: "50%", width: "280px", height: "4px", borderRadius: "10px", border: "10px", backgroundColor:'#005CA1', borderColor: 'white',
+                    <input  className="searchinput" style={{marginLeft: "41%", width: "280px", height: "4px", borderRadius: "10px", border: "10px", backgroundColor:'#005CA1', borderColor: 'white',
                                     backgroundImage:  `url(${search})` ,
                                     backgroundRepeat:' no-repeat',
                                     backgroundSize: '7%',

@@ -18,6 +18,7 @@ function Selectscreen() {
             
             <div className="mainsquare">
             <div className="img"></div>
+            <div> <p>GERENCIADOR DE CHAMADOS</p></div>
                 <div class="grid">
                     <div class="grid-item" style={{ background: "#0075bc" }} onClick={handleClick}>DENÚNCIA</div>
                     <div class="grid-item" style={{ background: "#ffcc00" }} onClick={handleClick}>SUDEO</div>

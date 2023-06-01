@@ -10,7 +10,7 @@ function Forms() {
 
     const [selectedImage, setSelectedImage] = useState([]);
     const [formtype, setFormtype] = useState([{}]);
-    
+
 
     useEffect(() => {
         const getType = async () => {
@@ -26,7 +26,7 @@ function Forms() {
 
     const onSubmit = async (data) => {
 
-        
+
 
         Throw(data, formtype[0], selectedImage)
     };
@@ -34,15 +34,15 @@ function Forms() {
     const handleImageChange = (event) => {
         // const file = event.target.files[0];
         // setSelectedImage(URL.createObjectURL(file));
-        const files = event.target.files        
+        const files = event.target.files
         const imagesarray = [];
 
-        for(var i= 0; i<files.length; i++){
+        for (var i = 0; i < files.length; i++) {
             const reader = new FileReader()
-            console.log(files[0].name.substring(files[0].name.length -3))
-            reader.onload = (e)=>{
-                imagesarray.push({"imagecode" : e.target.result, "extension": files[0].name.substring(files[0].name.length -3), "name": files[0].name.substring(0, files[0].name.length -3)})
-                if(imagesarray.length === files.length){
+            console.log(files[0].name.substring(files[0].name.length - 3))
+            reader.onload = (e) => {
+                imagesarray.push({ "imagecode": e.target.result, "extension": files[0].name.substring(files[0].name.length - 3), "name": files[0].name.substring(0, files[0].name.length - 3) })
+                if (imagesarray.length === files.length) {
                     setSelectedImage(imagesarray)
                 }
             }
@@ -63,22 +63,28 @@ function Forms() {
                             <h1 style={{ display: "flex", justifyContent: "center" }}>{formtype[0].project_name}</h1>
                             <Divisionbar></Divisionbar>
                             {formtype.map((row, index) => (
-                                <div key={index}>
+                                <div key={index} style={{ marginLeft: "10%" }}>
                                     <label style={{ display: "block" }}>{formtype[index].nome}</label>
-                                    <input className="inserir" style={{ display: "none" }} {...register(`formtype[${index}].nome`, { required: false })} value={formtype[index].nome} />
+                                    <input className="inserir" style={{ display: "none" }} {...register(`formtype[${index}].nome`)} value={formtype[index].nome} />
                                     {formtype[index].tipo === "input" && (
-                                        <input className="inserir" {...register(`formtype[${index}].tipo`, { required: false })} />
+                                        <div>
+                                            <input placeholder={formtype[index].required ? "Campo obrigatório" : ""} className="inserir" {...register(`formtype[${index}].tipo`, { required: formtype[index].required })} />
+
+                                        </div>
+
+
                                     )}
+
                                     {formtype[index].tipo === "file" && (
-                                        <input onChange={handleImageChange} className="inserir" type="file" multiple/>
+                                        <input onChange={handleImageChange} className="inserir" type="file" multiple />
 
                                     )}
 
                                     {formtype[index].tipo === "textarea" && (
-                                        <textarea className="inserir" {...register(`formtype[${index}].tipo`, { required: false })} />
+                                        <textarea className="inserir" {...register(`formtype[${index}].tipo`, { required: formtype[index].required })} />
                                     )}
-                                    {formtype[index].tipo === "select" && (
-                                        <select className="inserir" {...register(`formtype[${index}].tipo`, { required: false })} >
+                                    {formtype[index].tipo === "select" && formtype[index].drop === "predio" &&(
+                                        <select className="inserir" {...register(`formtype[${index}].tipo`, { required: formtype[index].required })} >
                                             <option> ------- </option>
                                             <option value="GETIN/GEROC">GETIN/GEROC</option>
                                             <option value="CALLCENTER">CALLCENTER</option>
@@ -96,7 +102,21 @@ function Forms() {
 
                                     )}
 
-                                    
+                                    {formtype[index].tipo === "select" && formtype[index].drop === "Servico" && (
+                                        <select className="inserir" {...register(`formtype[${index}].tipo`, { required: formtype[index].required })} >
+                                            <option> Selecionar Serviço </option>
+                                            <option value="NOVO PERFIl">NOVO PERFIl</option>
+                                            <option value="ALTERAÇÃO DE PERFIL">ALTERAÇÃO DE PERFIL</option>
+                                            <option value="INATIVAR PERFIL">INATIVAR PERFIL</option>
+                                            <option value="OUTROS">OUTROS</option>
+                                            
+
+
+                                        </select>
+
+                                    )}
+
+
 
 
 

@@ -5,6 +5,7 @@ import Getin from "./components/getin/Getin";
 import Forms from "./components/commun/Fomsscreen";
 import Denuncia from "./components/estaticas/Denuncia";
 import Sudeo from "./components/sudeo/Sudeo";
+import Testerte from "./components/tester";
 
 
 function App() {
@@ -29,6 +30,10 @@ function App() {
     {
       path: "/SUDEO",
       element: <Sudeo/>
+    },
+    {
+      path: "/websk",
+      element: <Testerte/>
     }
 
 
