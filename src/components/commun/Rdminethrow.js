@@ -1,17 +1,11 @@
 import axios from "axios"
 
-
 export async function Throw (data, project, image){
 
-  const imagehandler =  (insideimg)=> {
-    const file = new File ([insideimg], 'fileName.png', {type: Blob.type})
-    
-  }
 
-  imagehandler(image)
+  console.log(image)
 
-    // console.log(image, "fasfafasfasf")
-    // console.log(image.file)
+    var imgarray = []
     var custumfields = { dados :{}}
     var nome = false
     var matricula = false
@@ -23,6 +17,22 @@ export async function Throw (data, project, image){
     var descrição = false
     var patrimonio = false
     var demaisCampos = ""
+
+
+    if(image.length > 0){
+  
+      for(var a = 0; a<image.length; a++){
+        console.log(image.length)
+       await axios.post('http://localhost:3333/api/v1/imgrecieve', {"image" :image[a].imagecode.substring(22), "name": image[0].name, "extension": image[a].extension}, 
+                
+        ).then((e)=>{console.log(e.data); imgarray.push({"content_type" : "image/png","token" :e.data.token, "filename" : `image${Number(a)}.png`})})
+
+      }
+
+
+      console.log(imgarray)
+    }
+
 
     for(var i=0; i< data.formtype.length; i++ ){
       var tipo = data.formtype[i].tipo 
@@ -49,8 +59,14 @@ export async function Throw (data, project, image){
         patrimonio = tipo
       }else if(data.formtype[i].nome === "Predio"){
         predio = tipo
-      }else {
-         demaisCampos += `*${data.formtype[i].nome}:* `  + data.formtype[i].tipo + '\r\n'
+      }else if(data.formtype[i].nome === "Anexar imagens"){
+        demaisCampos += ""
+
+      } else{
+        if(data.formtype[i].nome !== undefined && data.formtype[i].nome !== ""){
+          demaisCampos += `*${data.formtype[i].nome}:* `  + data.formtype[i].tipo + '\r\n'
+        }
+         
       }
 
     }
@@ -61,25 +77,24 @@ export async function Throw (data, project, image){
    
 
     
-    // axios.post("http://localhost:3333/api/v1/cabeleira", 
-    
-    //           { "issue": {
-    //             "subject": `${predio !== false ? predio : ""} ${setor !== false? setor : " "} ${project.project_name}- ${nome !== false? nome : ""} - ${matricula !== false? matricula : ""}`,
-    //             "project_id": `${project.project}`,
-    //             "tracker_id": `${project.tracker}`,
-    //             "status_id": "1",
-    //             "priority_id": "1",
-    //             "recipient_email": `${email?? ""}`,
-    //             "uploads": [{ "filename" : "image.png", "content_type": "image/png", "token": "33450.53fefa5b73eaec75e9c96c80d7dd4174021ff24b44f727febb1999646ee02876"}],
-    //             // "description": `*Empregado(a):*  ${data.formtype[1].tipo}\r\n*Matrícula:* ${data.formtype[3].tipo}\r\n*E-mail:* ${data.formtype[2].tipo}\r\n*Telefone:* ${data.formtype[4].tipo}\r\n*Setor:* ${data.formtype[5].tipo}\r\n*Prédio:* ${data.formtype[6].tipo}\r\n*Tombamento:* ${data.formtype[7].tipo}\r\n*Descrição:* ${data.formtype[8].tipo}\r\n\r\nEste e-mail foi enviado de um formulário de contato em Intranet.`
-    //             "description": `${nome  !== false? "*Empregado(a):* " + nome + "\r\n" : ""} ${cpf !==false ? "*CPF:* " + cpf : ""} ${matricula !== false? "*Matricula:* " + matricula : ""}\r\n${email !== false? "*E-mail:* " + email : ""}\r\n${telefone !== false? '*Telefone:* ' + telefone : ""}\r\n${setor !== false? '*Setor:* ' + setor : ""}\r\n${predio !== false? '*Predio:* ' + predio : ""}\r\n${patrimonio !== false? '*Tombamento:* ' + patrimonio : ""}\r\n${descrição !== false? '*Descrição:* ' + descrição : ""}\r\n${demaisCampos !== false? demaisCampos : ""} `
-    //             ,
-    //           "custom_fields": [ custumfields.dados ] }},{ headers: {'content-type': 'application/json'}} 
+    axios.post("http://localhost:3333/api/v1/cabeleira",     
+              { "issue": {
+                "subject": `${predio !== false ? predio : ""} ${setor !== false? setor : " "} ${project.project_name}- ${nome !== false? nome : ""} - ${matricula !== false? matricula : ""}`,
+                "project_id": `${project.project}`,
+                "tracker_id": `${project.tracker}`,
+                "status_id": "1",
+                "priority_id": "1",
+                "recipient_email": `${email?? ""}`,
+                "uploads": imgarray,
+                // "description": `*Empregado(a):*  ${data.formtype[1].tipo}\r\n*Matrícula:* ${data.formtype[3].tipo}\r\n*E-mail:* ${data.formtype[2].tipo}\r\n*Telefone:* ${data.formtype[4].tipo}\r\n*Setor:* ${data.formtype[5].tipo}\r\n*Prédio:* ${data.formtype[6].tipo}\r\n*Tombamento:* ${data.formtype[7].tipo}\r\n*Descrição:* ${data.formtype[8].tipo}\r\n\r\nEste e-mail foi enviado de um formulário de contato em Intranet.`
+                "description": `${nome  !== false? "*Empregado(a):* " + nome + "\r\n" : ""} ${cpf !==false ? "*CPF:* " + cpf : ""} ${matricula !== false? "*Matricula:* " + matricula : ""}\r\n${email !== false? "*E-mail:* " + email : ""}\r\n${telefone !== false? '*Telefone:* ' + telefone : ""}\r\n${setor !== false? '*Setor:* ' + setor : ""}\r\n${predio !== false? '*Predio:* ' + predio : ""}\r\n${patrimonio !== false? '*Tombamento:* ' + patrimonio : ""}\r\n${demaisCampos !== false? demaisCampos : ""}\r\n${descrição !== false? '*Descrição:* ' + descrição : ""} `
+                ,
+              "custom_fields": [ custumfields.dados ] }},{ headers: {'content-type': 'application/json'}} 
               
-    //           ).then((e)=>{console.log(e)})
+              ).then((e)=>{console.log(e)})
 
 
-    //         console.log('feito')
+            console.log('feito')
    } catch (error) {
      console.log(error)
    }

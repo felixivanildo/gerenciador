@@ -4399,11 +4399,6 @@
   dependencies:
     "fill-range" "^7.0.1"
 
-"browser-nativefs@^0.12.0":
-  "integrity" "sha512-ZCHJcQI6bBm9YjB+6wMT1nWg+/mnWnz7r3gJ8sx7RjgLtWROFq+BuD12cAncD6y45MIbUqFM8eMKXoHXOxSFxA=="
-  "resolved" "https://registry.npmjs.org/browser-nativefs/-/browser-nativefs-0.12.0.tgz"
-  "version" "0.12.0"
-
 "browser-process-hrtime@^1.0.0":
   "integrity" "sha512-9o5UecI3GhkpM6DrXr69PblIuWxPKk9Y0jHBRhdocZ2y7YECBFCsHm79Pr3OyR2AvjhDkabFJaDJMYRazHgsow=="
   "resolved" "https://registry.npmjs.org/browser-process-hrtime/-/browser-process-hrtime-1.0.0.tgz"

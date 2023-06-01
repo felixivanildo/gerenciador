@@ -8,8 +8,9 @@ import Divisionbar from "./Divisionbar";
 
 function Forms() {
 
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedImage, setSelectedImage] = useState([]);
     const [formtype, setFormtype] = useState([{}]);
+    
 
     useEffect(() => {
         const getType = async () => {
@@ -24,17 +25,30 @@ function Forms() {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = async (data) => {
-        // const formData = new FormData();
-        // formData.append('image', selectedImage);
 
-        console.log(data)
+        
+
         Throw(data, formtype[0], selectedImage)
     };
 
     const handleImageChange = (event) => {
-        const file = event.target.files[0];
-        console.log(event.target.files, "este")
-        setSelectedImage(URL.createObjectURL(file));
+        // const file = event.target.files[0];
+        // setSelectedImage(URL.createObjectURL(file));
+        const files = event.target.files        
+        const imagesarray = [];
+
+        for(var i= 0; i<files.length; i++){
+            const reader = new FileReader()
+            console.log(files[0].name.substring(files[0].name.length -3))
+            reader.onload = (e)=>{
+                imagesarray.push({"imagecode" : e.target.result, "extension": files[0].name.substring(files[0].name.length -3), "name": files[0].name.substring(0, files[0].name.length -3)})
+                if(imagesarray.length === files.length){
+                    setSelectedImage(imagesarray)
+                }
+            }
+
+            reader.readAsDataURL(files[i])
+        }
     };
 
     return (
@@ -56,7 +70,7 @@ function Forms() {
                                         <input className="inserir" {...register(`formtype[${index}].tipo`, { required: false })} />
                                     )}
                                     {formtype[index].tipo === "file" && (
-                                        <input onChange={handleImageChange} className="inserir" type="file" multiple />
+                                        <input onChange={handleImageChange} className="inserir" type="file" multiple/>
 
                                     )}
 
