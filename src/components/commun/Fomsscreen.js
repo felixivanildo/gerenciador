@@ -6,6 +6,7 @@ import './Form.css'
 import { Throw } from "./Rdminethrow";
 import Divisionbar from "./Divisionbar";
 
+
 function Forms() {
 
     const [selectedImage, setSelectedImage] = useState([]);
@@ -83,7 +84,7 @@ function Forms() {
                                     {formtype[index].tipo === "textarea" && (
                                         <textarea className="inserir" {...register(`formtype[${index}].tipo`, { required: formtype[index].required })} />
                                     )}
-                                    {formtype[index].tipo === "select" && formtype[index].drop === "predio" &&(
+                                    {formtype[index].tipo === "select" && formtype[index].drop === "predio" && (
                                         <select className="inserir" {...register(`formtype[${index}].tipo`, { required: formtype[index].required })} >
                                             <option> ------- </option>
                                             <option value="GETIN/GEROC">GETIN/GEROC</option>
@@ -109,11 +110,15 @@ function Forms() {
                                             <option value="ALTERAÇÃO DE PERFIL">ALTERAÇÃO DE PERFIL</option>
                                             <option value="INATIVAR PERFIL">INATIVAR PERFIL</option>
                                             <option value="OUTROS">OUTROS</option>
-                                            
+
 
 
                                         </select>
 
+                                    )}
+
+                                    {formtype[index].tipo === "documento" && (
+                                        <div></div>
                                     )}
 
 

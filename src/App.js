@@ -6,6 +6,7 @@ import Forms from "./components/commun/Fomsscreen";
 import Denuncia from "./components/estaticas/Denuncia";
 import Sudeo from "./components/sudeo/Sudeo";
 import Testerte from "./components/tester";
+import Sulos from "./components/sulos/Sulos";
 
 
 function App() {
@@ -32,8 +33,12 @@ function App() {
       element: <Sudeo/>
     },
     {
-      path: "/websk",
+      path: "/websk/:data",
       element: <Testerte/>
+    },
+    {
+      path: "/SULOS",
+      element: <Sulos/>
     }
 
 

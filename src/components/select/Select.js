@@ -29,7 +29,7 @@ function Selectscreen() {
                     <div class="grid-item" style={{ background: "#55AA55" }} onClick={handleClick}>GEPAT</div>
                     <div class="grid-item" style={{ background: "#5243cee3" }} onClick={handleClick}>RH</div>
                     <div class="grid-item" style={{ background: "#05A64B" }} onClick={handleClick}>CIPA</div>
-                    <div class="grid-item" style={{ display: "NONE" }}></div>
+                    <div class="grid-item" style={{ background: "RED" }} onClick={handleClick}>SULOS</div>
 
                 </div>
                 <Divisionbar />

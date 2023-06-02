@@ -354,8 +354,24 @@ export function Selector(data) {
             { nome: "Predio", tipo: "select", drop: "predio" },
             { nome: "Tombamento do equipamento", tipo: "input", required: true},
             { nome: "Descrição", tipo: "textarea" },
+            { nome: "PDF teste", tipo: "documento", path: "../documentsPdf/relatorio (49).pdf"}
             ]
         }
 
+
+    // Toca de Responsavel
+
+    if (data === "Troca de responsavel"){
+        return [{ project: 12, tracker: 3, project_name: "Troca de responsavel" }, { nome: "Nome completo", tipo: "input", required: true},
+            { nome: "Email coorporativo", tipo: "input", required: true},
+            { nome: "Número da matricula", tipo: "input", required: true},
+            { nome: "Telefone", tipo: "input", required: true},
+            { nome: "Setor", tipo: "input", required: true},
+            { nome: "Predio", tipo: "select", drop: "predio" },
+            { nome: "Tombamento do equipamento", tipo: "input", required: true},
+            { nome: "Descrição", tipo: "textarea" },
+            { nome: "PDF teste", tipo: "documento", path: "../documentsPdf/relatorio (49).pdf"}
+            ]
+        }
 
 }

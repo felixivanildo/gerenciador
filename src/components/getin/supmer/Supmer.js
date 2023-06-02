@@ -86,6 +86,7 @@ function Supmer() {
           <div className="buttons">
             <div className="menu" onMouseEnter={handleMouseEntercpu} onMouseLeave={handleMouseLeavecpu}>
                 <button className={`computador-toggle ${cpu ? 'open' : ''}`} ></button>
+                <label>Computador</label>
                 <ul className={`main-menu ${cpu ? 'open' : ''}`}>
                     <li><button onClick={formselector}>Computador não funciona</button></li>
                     <li><button onClick={formselector}>Instalação de software</button></li>
@@ -99,6 +100,7 @@ function Supmer() {
 
             <div className="menu" onMouseEnter={handleMouseEnterctq} onMouseLeave={handleMouseLeavectq}>
                 <button className={`contracheque-toggle ${ctq ? 'open' : ''}`} ></button>
+                <label>Contracheque</label>
                 <ul className={`main-menu ${ctq ? 'open' : ''}`}>
                     <li><button onClick={()=>{window.location.href = 'https://contracheque.casal.al.gov.br/login/'}}>Criar senha</button></li>
                     <li><button onClick={formselector}>Resetar senha</button></li>
@@ -112,6 +114,7 @@ function Supmer() {
 
             <div className="menu" onMouseEnter={handleMouseEnterinte} onMouseLeave={handleMouseLeaveinte}>
                 <button className={`internet-toggle ${inte ? 'open' : ''}`} ></button>
+                <label>Internet</label>
                 <ul className={`main-menu ${inte ? 'open' : ''}`}>
                     <li><button onClick={formselector}>Abrir chamado</button></li>
                    
@@ -126,6 +129,7 @@ function Supmer() {
           <div className="buttons">
           <div className="menu" onMouseEnter={handleMouseEnteremail} onMouseLeave={handleMouseLeaveemail}>
                 <button className={`email-toggle ${email ? 'open' : ''}`} ></button>
+                <label>Email</label>
                 <ul className={`main-menu ${email ? 'open' : ''}`}>
                     <li><button onClick={formselector}>Solicitar e-mail funcional</button></li>
                     <li><button onClick={formselector}>Solicitar e-mail setorial</button></li>
@@ -139,6 +143,7 @@ function Supmer() {
 
             <div className="menu" onMouseEnter={handleMouseEnterimp} onMouseLeave={handleMouseLeaveimp}>
                 <button className={`imp-toggle ${imp ? 'open' : ''}`} ></button>
+                <label>Impressora</label>
                 <ul className={`main-menu ${imp ? 'open' : ''}`}>
                     <li><button onClick={formselector}>Impressora/Scanner não imprime</button></li>
                     <li><button onClick={formselector}>Instalar em outro computador</button></li>

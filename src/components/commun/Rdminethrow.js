@@ -23,9 +23,9 @@ export async function Throw (data, project, image){
   
       for(var a = 0; a<image.length; a++){
         console.log(image.length)
-       await axios.post('http://localhost:3333/api/v1/imgrecieve', {"image" :image[a].imagecode.substring(22), "name": image[0].name, "extension": image[a].extension}, 
+       await axios.post('http://localhost:3333/api/v1/imgrecieve', {"image" :image[a].imagecode, "name": image[a].name, "extension": image[a].extension}, 
                 
-        ).then((e)=>{console.log(e.data); imgarray.push({"content_type" : "image/png","token" :e.data.token, "filename" : `image${Number(a)}.png`})})
+        ).then((e)=>{console.log(e.data); imgarray.push({"content_type" : "image/png","token" :e.data.token, "filename" : `${image[0].name}` + `${image[0].extension}`})})
 
       }
 

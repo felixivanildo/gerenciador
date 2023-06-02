@@ -1,27 +1,35 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const Testerte = () => {
-  const [data, setData] = useState('');
+  let data = useParams ();
+  console.log((data))
+  
 
-  useEffect(() => {
-    const ws = new WebSocket('ws://localhost:6969');
 
-    // Handle WebSocket messages
-    ws.onmessage = (event) => {
-      const receivedData = JSON.parse(event.data);
-      setData(receivedData);
-    };
+decodeURIComponent = atob(data.data)
+console.log(decodeURIComponent)
+  // const [data, setData] = useState('');
 
-    return () => {
-      // Clean up WebSocket connection
-      ws.close();
-    };
-  }, []);
+  // useEffect(() => {
+  //   const ws = new WebSocket('ws://localhost:6969');
+
+  //   // Handle WebSocket messages
+  //   ws.onmessage = (event) => {
+  //     const receivedData = JSON.parse(event.data);
+  //     setData(receivedData);
+  //   };
+
+  //   return () => {
+  //     // Clean up WebSocket connection
+  //     // ws.close();
+  //   };
+  // }, []);
 
   return (
     <div>
       <h1>Data received from API:</h1>
-      <p>{JSON.stringify(data)}</p>
+      <p>tou said: {data.data}</p>
     </div>
   );
 };

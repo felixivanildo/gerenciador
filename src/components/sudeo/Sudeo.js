@@ -45,13 +45,14 @@ function Sudeo() {
       <div>
          <MainLayout></MainLayout>
          <div className="main">
-            <h1>ABERTURA DE CHAMADOS SUDEO</h1>
+            <h1>SUDEO</h1>
             <Divisionbar/>
             <div className="buttons">
             <div className="menu" onMouseEnter={handleMouseEntersei} onMouseLeave={handleMouseLeavesei}>
                 <button className={`sudeo-toggle ${sei ? 'open' : ''}`} ></button>
+                <label>Sei</label>
                 <ul className={`main-menu ${sei ? 'open' : ''}`}>
-                    <li><button onClick={formselector}>Computador não funciona</button></li>
+                    <li><button onClick={formselector}>Troca de responsavel</button></li>
                     <li><button onClick={formselector}>Instalação de software</button></li>
                     <li><button onClick={formselector}>Erro de software</button></li>
                     <li><button onClick={formselector}>Problema com mouse/teclado</button></li>

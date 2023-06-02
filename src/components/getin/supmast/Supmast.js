@@ -109,6 +109,7 @@ function Supmast() {
             <div className="buttons">
                 <div className="menu" onMouseEnter={handleMouseEntergsan} onMouseLeave={handleMouseLeavegsan}>
                     <button className={`gsan-toggle ${gsan ? 'open' : ''}`} ></button>
+                    <label>Gsan</label>
                     <ul className={`main-menu ${gsan ? 'open' : ''}`}>
                         <li><button onClick={formselector} >Erros</button></li>
                         <li><button onClick={formselector} >Solicitação de dados/relatórios</button></li>
@@ -121,6 +122,7 @@ function Supmast() {
 
                 <div className="menu" onMouseEnter={handleMouseEnterpth} onMouseLeave={handleMouseLeavepth}>
                     <button className={`pth-toggle ${pth ? 'open' : ''}`} ></button>
+                    <label>Pentaho</label>
                     <ul className={`main-menu ${pth ? 'open' : ''}`}>
                         <li><button onClick={formselector} >Solicitação de suporte</button></li>
                         <li><button onClick={formselector} >Solicitação de acesso</button></li>
@@ -134,6 +136,7 @@ function Supmast() {
 
                 <div className="menu" onMouseEnter={handleMouseEnterred} onMouseLeave={handleMouseLeavered}>
                     <button className={`redmine-toggle ${red ? 'open' : ''}`} ></button>
+                    <label>Redmine</label>
                     <ul className={`main-menu ${red ? 'open' : ''}`}>
                         <li><button onClick={formselector} >{`Ativação/desativação de usuário(s)`}</button></li>
                         <li><button onClick={formselector} >Implantação do Redmine</button></li>
@@ -152,6 +155,7 @@ function Supmast() {
 
                 <div className="menu" onMouseEnter={handleMouseEnterpir} onMouseLeave={handleMouseLeavepir}>
                     <button className={`piramide-toggle ${pir ? 'open' : ''}`} ></button>
+                    <label>Pirâmide</label>
                     <ul className={`main-menu ${pir ? 'open' : ''}`}>
                         <li><button onClick={formselector} >Suporte Pirâmide</button></li>
                         <li><button onClick={formselector} >Criar/Alterar Perfil</button></li>
@@ -164,6 +168,7 @@ function Supmast() {
 
                 <div className="menu" onMouseEnter={handleMouseEntersst} onMouseLeave={handleMouseLeavesst}>
                     <button className={`salasituacao-toggle ${sst ? 'open' : ''}`} ></button>
+                    <label>Sala de Situação</label>
                     <ul className={`main-menu ${sst ? 'open' : ''}`}>
                         <li><button onClick={formselector} >Chamados Sala Situação</button></li>
                     
@@ -175,6 +180,7 @@ function Supmast() {
 
                 <div className="menu" onMouseEnter={handleMouseEnterintra} onMouseLeave={handleMouseLeaveintra}>
                     <button className={`intranet-toggle ${intra ? 'open' : ''}`} ></button>
+                    <label>Intranet</label>
                     <ul className={`main-menu ${intra ? 'open' : ''}`}>
                         <li><button onClick={formselector} >Reportar falha/erro</button></li>
                      
@@ -191,6 +197,7 @@ function Supmast() {
 
                 <div className="menu" onMouseEnter={handleMouseEntersc} onMouseLeave={handleMouseLeavesc}>
                     <button className={`sc-toggle ${sc ? 'open' : ''}`} ></button>
+                    <label>Site</label>
                     <ul className={`main-menu ${sc ? 'open' : ''}`}>
                         <li><button onClick={formselector} >Reportar falha/erro no site</button></li>
                        
@@ -202,6 +209,7 @@ function Supmast() {
 
                 <div className="menu" onMouseEnter={handleMouseEnteroutro} onMouseLeave={handleMouseLeaveoutro}>
                     <button className={`outro-toggle ${outro ? 'open' : ''}`} ></button>
+                    <label>Outros</label>
                     <ul className={`main-menu ${outro ? 'open' : ''}`}>
                         <li><button onClick={formselector} >Abir outro tipo</button></li>
                        
