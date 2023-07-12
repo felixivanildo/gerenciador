@@ -2,11 +2,41 @@ import React from "react";
 import Logo from "../../img/logocasal60.png"
 import search from "../../img/search.png"
 import NavButton from "./Navbarbutton";
-
+import "./Layout.css"
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 function MainLayout (){
+  
+    const Navigate = useNavigate ()
 
-   
+    useEffect(() => {
+ 
+       const cleaner = async () => {
+ 
+         
+ 
+ 
+         const value = await AsyncStorage.getItem('@User') ?? false;
+         
+         console.log(typeof(value))
+ 
+         
+         
+         if (!value) {
+           // value previously stored
+           Navigate("/websk/:data")
+         }
+
+         
+       } 
+       
+       cleaner()
+    })
+ 
+    
+
     const navbarStyle = {
         backgroundColor: '#0093DD',
         paddingTop: '0px',
@@ -39,8 +69,8 @@ function MainLayout (){
             <div className="navbar" style={navbarStyle}>
                 <div style={imgstyle}/>
                 
-                <NavButton link="" nome="PAGINA INICIAL" ></NavButton>
-                <NavButton link="" nome="MEUS CHAMADOS"></NavButton>
+                <NavButton link="" nome="PAGINA INICIAL"></NavButton>
+                <NavButton link="MEUS CHAMADOS" nome="MEUS CHAMADOS"></NavButton>
                 <NavButton link="" nome="SAIR"></NavButton>
                              
                 

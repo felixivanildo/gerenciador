@@ -2,33 +2,12 @@ import React, { useEffect } from "react";
 import Supmer from "./supmer/Supmer";
 import Supmast from "./supmast/Supmast";
 import MainLayout from "../commun/Layout";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import Rodape from "../commun/Rodape";
+
 
 function Getin() {
 
-
-   useEffect(() => {
-
-      const cleaner = async () => {
-
-        
-         await AsyncStorage.removeItem('@formulario')
-
-
-         // return () => {
-         //    // Clean up WebSocket connection
-         //    ws.close();
-         // };
-      }
-
-
-
-      cleaner()
-
-   }, [])
-
-
+  
 
    return (
 

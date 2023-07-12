@@ -1,0 +1,154 @@
+.sdoc-toggle{
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../img/SDOC.png') ;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+    
+  }
+  
+  .sdoc-toggle.open{
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../img/SDOC.png') ;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+  
+  }
+
+  .scad-toggle{
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../img/cadastros.png') ;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+    
+  }
+  
+  .scad-toggle.open{
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../img/cadastros.png') ;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+  
+  }
+
+
+  .sfat-toggle{
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../img/faturamento.png') ;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+    
+  }
+  
+  .sfat-toggle.open{
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../img/faturamento.png') ;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+  
+  }
+
+
+  .slic-toggle{
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../img/liquidação.png') ;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+    
+  }
+  
+  .slic-toggle.open{
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../img/liquidação.png') ;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+  
+  }
+
+
+  
+  .smic-toggle{
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../img/medidor.png') ;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+    
+  }
+  
+  .smic-toggle.open{
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../img/medidor.png') ;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+  
+  }
+
+    
+  .cdo-toggle{
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../img/configuracao.png') ;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+    
+  }
+  
+  .cdo-toggle.open{
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../img/configuracao.png') ;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+  
+  }

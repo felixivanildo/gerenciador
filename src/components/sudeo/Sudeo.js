@@ -52,18 +52,19 @@ function Sudeo() {
                 <button className={`sudeo-toggle ${sei ? 'open' : ''}`} ></button>
                 <label>Sei</label>
                 <ul className={`main-menu ${sei ? 'open' : ''}`}>
-                    <li><button onClick={formselector}>Troca de responsavel</button></li>
-                    <li><button onClick={formselector}>Instalação de software</button></li>
-                    <li><button onClick={formselector}>Erro de software</button></li>
-                    <li><button onClick={formselector}>Problema com mouse/teclado</button></li>
+                    <li><button onClick={formselector}>Manter usuário</button></li>
+                    <li><button onClick={formselector}>Treinamento</button></li>
+                    <li><button onClick={formselector}>Suporte</button></li>
+                    <li><button onClick={() => { window.location.href = "https://mudarsenha.sei.al.gov.br/login/?next=/" }}>Alterar senha</button></li>
                 </ul>
 
 
             </div>
             </div>
-         </div>
+     
          <Divisionbar/>
          <Rodape></Rodape>
+         </div>
          
       </div>
    

@@ -2,8 +2,37 @@ import React from "react";
 import './Select.css'
 import { useNavigate } from "react-router-dom";
 import Divisionbar from "../commun/Divisionbar";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useEffect } from "react";
+
 
 function Selectscreen() {
+
+    const Navigate = useNavigate ()
+
+    useEffect(() => {
+ 
+       const cleaner = async () => {
+ 
+         
+ 
+ 
+         const value = await AsyncStorage.getItem('@User') ?? false;
+         
+         console.log(typeof(value))
+ 
+         
+         
+         if (!value) {
+           // value previously stored
+           Navigate("/websk/:data")
+         }
+
+         
+       } 
+       
+       cleaner()
+    })
 
     const navigate = useNavigate()
     const handleClick = (data) => {
@@ -18,7 +47,7 @@ function Selectscreen() {
             
             <div className="mainsquare">
             <div className="img"></div>
-            <div> <p>GERENCIADOR DE CHAMADOS</p></div>
+            <div> <h2>GERENCIADOR DE CHAMADOS</h2></div>
                 <div class="grid">
                     <div class="grid-item" style={{ background: "#0075bc" }} onClick={handleClick}>DENÚNCIA</div>
                     <div class="grid-item" style={{ background: "#ffcc00" }} onClick={handleClick}>SUDEO</div>
@@ -33,7 +62,7 @@ function Selectscreen() {
 
                 </div>
                 <Divisionbar />
-                <div className="meus">
+                <div className="meus" onClick={handleClick}>
                     MEUS CHAMADOS
                 </div>
             </div>

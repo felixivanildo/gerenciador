@@ -26,7 +26,7 @@ const leavehandler = () => {
     return (
         
 
-        <div onMouseEnter={enterhandler} onMouseLeave={leavehandler} style={{
+        <div classname="navbutton" onMouseEnter={enterhandler} onMouseLeave={leavehandler} style={{
             background: `${color[0].background}`,
             display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px'
         }} onClick={() => { Navigate(`/${Props.link}`) }}>

@@ -28,13 +28,13 @@
     background-color: white;
 }
 
-input {
+/* input {
     -webkit-box-shadow: -1px 10px 21px -12px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 10px 21px -12px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 10px 21px -12px rgba(0, 0, 0, 0.75);
     border: 3px;
     border-radius: 4px;
-}
+} */
 
 button[type="submit"]:hover,
 input[type="submit"]:hover {
@@ -56,4 +56,14 @@ label {
 .tela {
     height: 100vh;
     width: 100%;
+}
+
+.inserir{
+    width: 320px;
+    height: 25px;
+    -webkit-box-shadow: -1px 10px 21px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 21px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 10px 21px -12px rgba(0, 0, 0, 0.75);
+    border: 3px;
+    border-radius: 4px;
 }

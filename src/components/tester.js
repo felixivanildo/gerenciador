@@ -1,35 +1,54 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import MainTheme from './commun/Maintheme';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useNavigate } from 'react-router-dom';
+// import "./tester.css"
 
 const Testerte = () => {
-  let data = useParams ();
-  console.log((data))
-  
+
+  const [elements, setElements] = useState([])
+  const Navigate = useNavigate ()
+  let data = useParams();
 
 
-decodeURIComponent = atob(data.data)
-console.log(decodeURIComponent)
-  // const [data, setData] = useState('');
+  useEffect(() => {
+    
+    try {
+      const userReceived = atob(data.data)
+      const info = JSON.parse(userReceived)
+      console.log(info)      
+        
+      setElements([<h1>LOGGED</h1>])
+      const running = async ()=>{
+        await AsyncStorage.setItem('@User', JSON.stringify(info))
+        
+      }
+      
+      running ()
+    } catch (error) {
+      
+      setElements([<h1  style={{display: "flex", flexDirection:"column", justifyContent: "center", alignItems: "center"}} >USUARIO NÃO AUTENTICADO <br></br> <button onClick={()=>{window.location.href = 'https://intranet.casal.al.gov.br'}}>Logar na Intranet</button></h1>,              
+    ])
+      
+    }
 
-  // useEffect(() => {
-  //   const ws = new WebSocket('ws://localhost:6969');
 
-  //   // Handle WebSocket messages
-  //   ws.onmessage = (event) => {
-  //     const receivedData = JSON.parse(event.data);
-  //     setData(receivedData);
-  //   };
 
-  //   return () => {
-  //     // Clean up WebSocket connection
-  //     // ws.close();
-  //   };
-  // }, []);
+
+
+  }, [])
+
 
   return (
-    <div>
-      <h1>Data received from API:</h1>
-      <p>tou said: {data.data}</p>
+    <div >
+    {elements}
+    
+    <div className="drop-container">
+      <div className='drop'></div>
+    </div>
+  
+      
     </div>
   );
 };
