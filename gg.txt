@@ -1,0 +1,310 @@
+{
+	"projects": [
+		{
+			"id": 306,
+			"name": "Concurso de fotografia CASAL 2021",
+			"identifier": "concurso-de-fotografia-casal-2021",
+			"description": "",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2021-02-19T08:33:49Z",
+			"updated_on": "2021-02-19T08:33:49Z"
+		},
+		{
+			"id": 383,
+			"name": "Concurso de fotografia CASAL 2022",
+			"identifier": "concurso-de-fotografia-casal-2022",
+			"description": "",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2022-03-04T18:08:34Z",
+			"updated_on": "2022-03-04T18:08:34Z"
+		},
+		{
+			"id": 381,
+			"name": "Workspace",
+			"identifier": "workspace",
+			"description": "Foto do perfil Google Workspace",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": true,
+			"created_on": "2022-01-10T17:08:49Z",
+			"updated_on": "2022-01-10T17:08:49Z"
+		},
+		{
+			"id": 393,
+			"name": "CIPA",
+			"identifier": "cipa",
+			"description": "Comissão Interna de Prevenção de Acidentes",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2022-10-20T18:25:55Z",
+			"updated_on": "2022-11-09T12:03:59Z"
+		},
+		{
+			"id": 10,
+			"name": "SUPMAST",
+			"identifier": "supmast",
+			"description": "Supervisão de Macro Sistemas de TI\r\n\r\n\r\nCentro de Custo: 3.02.13.06",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2017-09-15T22:19:12Z",
+			"updated_on": "2021-07-12T14:08:59Z"
+		},
+		{
+			"id": 280,
+			"name": "Demandas Internas",
+			"identifier": "demandas-internas",
+			"description": "",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2019-04-01T15:45:02Z",
+			"updated_on": "2019-04-01T15:45:02Z"
+		},
+		{
+			"id": 311,
+			"name": "Intranet",
+			"identifier": "intranet",
+			"description": "",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2021-06-02T08:35:02Z",
+			"updated_on": "2021-06-02T08:35:02Z"
+		},
+		{
+			"id": 139,
+			"name": "Sala de Situação",
+			"identifier": "sala-de-situacao",
+			"description": "",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": true,
+			"created_on": "2018-03-13T08:15:29Z",
+			"updated_on": "2018-03-13T08:15:29Z"
+		},
+		{
+			"id": 398,
+			"name": "Google Cloud Plataform",
+			"identifier": "google-cloud-plataform",
+			"description": "Tarefas Relacionadas ao Ambiente de Nuvem da CASAL",
+			"parent": {
+				"id": 10,
+				"name": "SUPMAST"
+			},
+			"status": 1,
+			"is_public": false,
+			"inherit_members": true,
+			"created_on": "2023-05-25T11:13:51Z",
+			"updated_on": "2023-05-25T11:13:51Z"
+		},
+		{
+			"id": 17,
+			"name": "PENTAHO",
+			"identifier": "pentaho",
+			"description": "!https://redmine.casal.al.gov.br/attachments/download/8411/download.png!",
+			"parent": {
+				"id": 10,
+				"name": "SUPMAST"
+			},
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2017-11-08T08:27:16Z",
+			"updated_on": "2020-03-06T08:33:47Z"
+		},
+		{
+			"id": 14,
+			"name": "PIRAMIDE",
+			"identifier": "piramide",
+			"description": "",
+			"parent": {
+				"id": 10,
+				"name": "SUPMAST"
+			},
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2017-09-15T22:37:25Z",
+			"updated_on": "2017-09-15T22:37:25Z"
+		},
+		{
+			"id": 161,
+			"name": "Redmine Casal",
+			"identifier": "redmine-casal",
+			"description": "Evolução da implantação do Redmine na Casal",
+			"parent": {
+				"id": 10,
+				"name": "SUPMAST"
+			},
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2018-05-02T08:46:25Z",
+			"updated_on": "2018-05-02T08:46:25Z"
+		},
+		{
+			"id": 12,
+			"name": "HelpDesk",
+			"identifier": "chamados",
+			"description": "!https://redmine.casal.al.gov.br/attachments/download/8407/helpdesk.jpg!",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2017-09-15T22:21:11Z",
+			"updated_on": "2020-03-05T17:17:51Z"
+		},
+		{
+			"id": 229,
+			"name": "SUPARQ - Chamados",
+			"identifier": "suparq-chamados",
+			"description": "",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": true,
+			"created_on": "2018-09-14T14:56:17Z",
+			"updated_on": "2019-01-04T09:28:55Z"
+		},
+		{
+			"id": 359,
+			"name": "SUPATRI - Chamados",
+			"identifier": "supatri-chamados",
+			"description": "",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2021-07-08T16:21:00Z",
+			"updated_on": "2021-07-08T16:21:00Z"
+		},
+		{
+			"id": 236,
+			"name": "GESEA - Chamados",
+			"identifier": "gesea-chamados",
+			"description": "",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2019-01-15T10:04:14Z",
+			"updated_on": "2019-01-15T10:04:14Z"
+		},
+		{
+			"id": 26,
+			"name": "SUPSERV",
+			"identifier": "supserv",
+			"description": "Supervisão de Serviços Gerais\r\n\r\n",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": true,
+			"created_on": "2018-01-25T12:38:07Z",
+			"updated_on": "2019-01-04T09:29:32Z"
+		},
+		{
+			"id": 230,
+			"name": "SUPSERV - Chamados",
+			"identifier": "supserv-chamados",
+			"description": "",
+			"parent": {
+				"id": 26,
+				"name": "SUPSERV"
+			},
+			"status": 1,
+			"is_public": false,
+			"inherit_members": true,
+			"created_on": "2018-09-14T15:00:16Z",
+			"updated_on": "2019-01-04T09:29:46Z"
+		},
+		{
+			"id": 25,
+			"name": "SUPTRAN",
+			"identifier": "suptran",
+			"description": "Supervisão de Transportes\r\n\r\n",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": true,
+			"created_on": "2018-01-25T12:37:02Z",
+			"updated_on": "2019-01-04T09:30:07Z"
+		},
+		{
+			"id": 231,
+			"name": "SUPTRAN - Chamados",
+			"identifier": "suptran-chamados",
+			"description": "",
+			"parent": {
+				"id": 25,
+				"name": "SUPTRAN"
+			},
+			"status": 1,
+			"is_public": false,
+			"inherit_members": true,
+			"created_on": "2018-09-14T15:06:29Z",
+			"updated_on": "2019-01-04T09:30:22Z"
+		},
+		{
+			"id": 275,
+			"name": "GESUP - Chamados",
+			"identifier": "gesup-chamados",
+			"description": "",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": true,
+			"created_on": "2019-02-11T14:18:49Z",
+			"updated_on": "2019-02-11T14:19:18Z"
+		},
+		{
+			"id": 276,
+			"name": "SUPALM - Chamados",
+			"identifier": "supalm-chamados",
+			"description": "",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2019-02-20T09:37:27Z",
+			"updated_on": "2019-02-20T09:37:27Z"
+		},
+		{
+			"id": 31,
+			"name": "GEDEP",
+			"identifier": "gedep",
+			"description": "Gerência de Desenvolvimento de Pessoal e Bem Estar Social\r\n\r\n\r\nCentro de Custo: 3.05.13.01",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2018-01-25T13:07:57Z",
+			"updated_on": "2021-07-12T14:16:30Z"
+		},
+		{
+			"id": 286,
+			"name": "GEDEP - Subprojetos",
+			"identifier": "gedep-subprojetos",
+			"description": "",
+			"parent": {
+				"id": 31,
+				"name": "GEDEP"
+			},
+			"status": 1,
+			"is_public": false,
+			"inherit_members": true,
+			"created_on": "2019-05-28T09:46:39Z",
+			"updated_on": "2019-05-28T09:46:39Z"
+		},
+		{
+			"id": 307,
+			"name": "Registro de atividades Home Office",
+			"identifier": "registro-de-atividades-home-office",
+			"description": "Projeto para registrar as atividades desenvolvidas em Home Office.",
+			"status": 1,
+			"is_public": false,
+			"inherit_members": false,
+			"created_on": "2021-02-26T10:47:30Z",
+			"updated_on": "2021-02-26T10:47:30Z"
+		}
+	],
+	"total_count": 39,
+	"offset": 0,
+	"limit": 25
+}

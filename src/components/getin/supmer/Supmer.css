@@ -1,0 +1,265 @@
+
+@media (max-width: 800px) {
+  .buttons{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wholescreen {
+    justify-content: center;
+   
+  }
+
+  .mainsquare {
+    width: 80%;
+    height: 50%;
+  }
+
+  .grid {
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    width: 80%;
+  }
+
+  .meus {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .img {
+    height: 80px;
+    width: 80px;
+    background-size: 60px;
+    margin-bottom: 10px;
+  }
+  
+}
+
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+ul li{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.main h1{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+  
+ 
+  
+  .computador-toggle{
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../img/computador.png') ;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+    
+  }
+
+
+  .searchinput{
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+  }
+  
+  .computador-toggle.open{
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../img/computador.png') ;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+  
+  }
+  
+
+  
+  /* -------------------------- */
+  
+
+  
+  .contracheque-toggle{
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../img/contracheque.png') ;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+    
+  }
+  
+  .contracheque-toggle.open{
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../img/contracheque.png') ;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+  
+  }
+  
+  
+  
+  
+  /* -------------------------- */
+  
+ 
+  
+  .internet-toggle{
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../img/internet.png') ;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+    
+  }
+  
+  .internet-toggle.open{
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../img/internet.png') ;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+  
+  }
+  
+  
+  
+  
+  /* -------------------------- */
+  
+  
+  .email-toggle{
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../img/email.png') ;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+    
+  }
+  
+  .email-toggle.open{
+    width: 80px;
+    height: 80px;
+    background-image: url('../../../img/email.png') ;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center center;
+      background-color: rgba(255, 255, 255, 0);
+    border: none;
+  
+  }
+  
+  
+  
+    /* -------------------------- */
+ 
+      
+      .imp-toggle{
+        width: 100px;
+        height: 100px;
+        background-image: url('../../../img/imp.png') ;
+          background-repeat: no-repeat;
+          background-size: 80px;
+          background-position: center center;
+          background-color: rgba(255, 255, 255, 0);
+        border: none;
+        transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.5s;
+        
+      }
+      
+      .imp-toggle.open{
+        width: 80px;
+        height: 80px;
+        background-image: url('../../../img/imp.png') ;
+          background-repeat: no-repeat;
+          background-size: 40px;
+          background-position: center center;
+          background-color: rgba(255, 255, 255, 0);
+        border: none;
+      
+      }
+      
+     
+
+      button{
+        background-color: rgba(255, 255, 255, 0);
+        color: black;
+        border: none;
+        transition: opacity 0.3s, visibility 0.3s, duration 0.5s, 0.2s;
+      
+        
+      
+      }
+      
+      
+      button:hover{
+        background-color: rgba(255, 255, 255, 0);
+        color: blue;
+        transform: scale(1.5);
+      
+      }

@@ -1,0 +1,20 @@
+@media(max-width: 1200px){
+    .navbutton p{
+        font-size: 0.2rem;
+        background-color: black;
+        color: black;
+    }
+}
+
+.main{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+.clicklogo:hover{
+    margin-top: 10%;
+    scale: 1.2;
+    animation: 10000ms;
+    animation-delay: 2s;
+}
