@@ -15,7 +15,7 @@ function Meuschamados() {
         const getdata = async ()=> {
             const value = await AsyncStorage.getItem('@User') ?? false;
 
-            var retrieved = await axios.put('http://10.254.4.132:3333/api/v1/getable', JSON.parse(value))
+            var retrieved = await axios.put(`http://${process.env.REACT_APP_BASE_URL}:3333/api/v1/getable`, JSON.parse(value))
             
              setArrayteste(retrieved.data)
    
@@ -34,7 +34,7 @@ function Meuschamados() {
 
     const elements = [
         <div onClick={circunstance} style={{ marginLeft: "10%", marginRight: "10%", }}>
-            <h1 style={{ display: "flex", justifyContent: "center" }}>MEUS CHAMADOS</h1>
+            <h1 style={{ display: "flex", justifyContent: "center" }}>MEUS CHAMADOS {process.env.REACT_APP_BASE_URL}</h1>
             <Divisionbar></Divisionbar>
             <div style={{display: "flex", justifyContent: "center"}}>
             <table className="styled-table" >

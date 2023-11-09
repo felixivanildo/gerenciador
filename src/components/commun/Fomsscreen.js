@@ -87,7 +87,7 @@ function Forms() {
 
         for (var i = 0; i < files.length; i++) {
             const reader = new FileReader()
-            console.log(files[0].name.substring(files[0].name.length - 3))
+            console.log(files[0].name)
             reader.onload = (e) => {
                 imagesarray.push({ "imagecode": e.target.result, "extension": files[0].name.substring(files[0].name.length - 3), "name": files[0].name.substring(0, files[0].name.length - 3) })
                 if (imagesarray.length === files.length) {

@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: app_chamados
+    image: docker-react-chamados
+    environment:
+      IP_HOST: ${DOCKER_IP}
+    build:
+      context: .
+    ports:
+      - 3210:3000
+     

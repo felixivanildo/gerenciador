@@ -3,6 +3,7 @@ import axios from "axios"
 export async function Throw (data, project, image){
 
 
+
   console.log(image)
 
     var imgarray = []
@@ -23,7 +24,7 @@ export async function Throw (data, project, image){
   
       for(var a = 0; a<image.length; a++){
         console.log(image.length)
-       await axios.post('http://10.254.4.132:3333/api/v1/imgrecieve', {"image" :image[a].imagecode, "name": image[a].name, "extension": image[a].extension}, 
+       await axios.post(`http://${process.env.REACT_APP_BASE_URL}:3333/api/v1/imgrecieve`, {"image" :image[a].imagecode, "name": image[a].name, "extension": image[a].extension}, 
                 
         ).then((e)=>{console.log(e.data); imgarray.push({"content_type" : "image/png","token" :e.data.token, "filename" : `${image[0].name}` + `${image[0].extension}`})})
 
@@ -77,7 +78,7 @@ export async function Throw (data, project, image){
    
 
     
-    axios.post("http://10.254.4.132:3333/api/v1/cabeleira",     
+    axios.post(`http://${process.env.REACT_APP_BASE_URL}:3333/api/v1/cabeleira`,     
               { "issue": {
                 "subject": `${predio !== false ? predio : ""} ${setor !== false? setor : " "} ${project.project_name}- ${nome !== false? nome : ""} - ${matricula !== false? matricula : ""}`,
                 "project_id": `${project.project}`,
