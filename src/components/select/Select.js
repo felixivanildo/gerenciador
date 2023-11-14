@@ -17,15 +17,15 @@ function Selectscreen() {
          
  
  
-         const value = await AsyncStorage.getItem('@User') ?? false;
+         const value = await AsyncStorage.getItem('@Userchamados') ?? false;
          
-         console.log(value)
+        //  console.log(value)
  
          
          
          if (!value) {
            // value previously stored
-        //    Navigate("/websk/:data")
+           Navigate("/websk/:data")
          }
 
          

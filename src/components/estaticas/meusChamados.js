@@ -13,7 +13,7 @@ function Meuschamados() {
 
     useEffect(()=>{
         const getdata = async ()=> {
-            const value = await AsyncStorage.getItem('@User') ?? false;
+            const value = await AsyncStorage.getItem('@Userchamados') ?? false;
 
             var retrieved = await axios.put(`http://${process.env.REACT_APP_BASE_URL}:3333/api/v1/getable`, JSON.parse(value))
             
