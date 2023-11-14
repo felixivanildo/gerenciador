@@ -20,7 +20,7 @@ const Testerte = () => {
       const userReceived = data.data
       const decodedString = hexToString(data.data);
 
-      console.log(decodedString);
+      // console.log(decodedString);
 
       function hexToString(hex) {
         let string = "";
@@ -35,12 +35,13 @@ const Testerte = () => {
 
       // Convert the object to JSON
       const jsonOutput = { name: info.display_name, email: info.user_email, cpf: info.user_login }
-      console.log(jsonOutput)
+      // console.log(jsonOutput)
 
 
       setElements([<h1>{userReceived}</h1>])
       const running = async () => {
-        await AsyncStorage.setItem('@User', JSON.stringify(jsonOutput))
+        // await AsyncStorage.clear('@Userchamados')
+        await AsyncStorage.setItem('@Userchamados', JSON.stringify(jsonOutput))
         Navigate('/')
       }
 
@@ -65,7 +66,7 @@ const Testerte = () => {
       {elements}
 
       <div className="drop-container">
-        <div className='drop'> vrum</div>
+        <div className='drop'></div>
       </div>
 
 

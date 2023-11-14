@@ -17,7 +17,7 @@ function Forms() {
     useEffect(() => {
         const getType = async () => {
             const asfa = await AsyncStorage.getItem('@formulario')
-            const usuariosalvo = await AsyncStorage.getItem('@User') ?? false
+            const usuariosalvo = await AsyncStorage.getItem('@Userchamados') ?? false
             setUser(JSON.parse(usuariosalvo))
             console.log(user)
             setFormtype(JSON.parse(asfa))
