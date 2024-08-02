@@ -101,7 +101,7 @@ export async function Throw (data, project, image){
    
     
 
-//    axios.post('https://redmine.casal.al.gov.br/issues.json?key=ca239e06a3f10435c63c610ebd1809737ef72dd8', {
+//    axios.post('https://redmine.casal.al.gov.br/issues.json?key=', {
 //         "issue": {
 //           "subject": `Gesup Cadastro de Serviço - ${data.formtype[1].tipo} - ${data.formtype[3].tipo}`,
 //           "project_id": `${project.project}`,
